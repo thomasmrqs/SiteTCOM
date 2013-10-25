@@ -1,0 +1,154 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+    <title>Independent Static Top and Bottom Nav Bars with Twitter Bootstrap</title>
+ <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+<link rel="stylesheet" href="mycss/custom.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Optional theme -->
+<link rel="stylesheet" href="bootstrap/css/bootstrap-theme.min.css">
+
+<script type="text/javascript" src="myjs/jquery-1.8.2.min.js"></script>
+<script type="text/javascript" src="myjs/jquery-ui-1.9.1.custom.min.js"></script>
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="bootstrap/js/bootstrap.min.js"></script>
+ 
+  <style>
+	body { margin-top: 51px; }
+  </style>
+  <body>
+ 
+    <div class="navbar navbar-default navbar-fixed-top">
+      <div class="container">	  
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".top-collapse"><!-- NOTE!  data-toggle was changed to top-collapse -->
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+		  <img src="images/logo_TCOM.png" width="150" height="50" alt="TCOM" title="TCOM" />
+          <!--<a class="navbar-brand" href="#">TCOM</a>-->
+        </div>
+        <div class="navbar-collapse navbar-right collapse top-collapse"><!-- NOTE!  the class top-collapse was added here -->
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li class="divider"></li>
+                <li class="dropdown-header">Nav header</li>
+                <li><a href="#">Separated link</a></li>
+                <li><a href="#">One more separated link</a></li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="../navbar/">Default</a></li>
+            <li><a href="./">Static top</a></li>
+            <li><a href="../navbar-fixed-top/">Fixed top</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+		
+
+      </div>
+    </div>
+
+ 
+    <div class="container">
+		
+		<div class="row">
+		<div id="carousel-example-generic" class="carousel slide">
+			<!-- Indicators -->
+			<ol class="carousel-indicators">
+				<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+				<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+				<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+			</ol>
+
+			<!-- Wrapper for slides -->
+			<div class="carousel-inner">
+				<div class="item active"><img class="img-slide" src="images/bannerTCOM.jpg" alt="..." width="1170" height="400"></div>
+				<div class="item"><img class="img-slide" src="images/logo_TCOM2.png" alt="..." width="1170" height="400"></div>
+				<div class="item"><img class="img-slide" src="images/bannerTCOM3.png" alt="..." width="1170" height="400"></div>
+				
+				
+
+			</div>
+
+			<!-- Controls -->
+			<a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+			<span class="icon-prev"></span>
+			</a>
+			<a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+			<span class="icon-next"></span>
+			</a>
+		</div>
+ 		</div>
+
+ 
+      <div class="row">
+		<div class="col-md-4 pres-block" style='background-color: rgba(127,127,127,0.5)'>
+			<h1>Option TCOM</h1>
+			<p>Les métiers des télécommunications sont les métiers de demain sur un marché très porteur. Les besoins des consommateurs en terme de télécoms sont sans cesse en pleine croissance, les réseaux actuels doivent s'adapter et évoluer pour répondre à la demande. Matériels, protocoles de transmission de données, cryptographie, architectures réseaux sont quelques unes des notions abordées lors de la spécialité TCOM. </p>
+		</div>
+		<div class="col-md-4 pres-block" style='background-color: rgba(224,24,24,0.5)'>
+			<h1>Association CD-ROM</h1>
+			<p>L'association CDROM télécoms tient à promouvoir le travail de la spécialité TCOM en proposant chaque année une clé USB récapitulative des états de l'art des étudiants faits au long de leur option. Cette clé USB libre de droits proposant plus de 40 sujets sur les technologies de télécommunication est accessible aux professionnels et réutilisable à volonté. </p>
+		</div>
+		<div class="col-md-4 pres-block" style='background-color: rgba(24,24,24,0.8)'>
+			<h1>Laboratoire</h1>
+			<p>Le laboratoire EPITA TCOM est l'un des plus grands et mieux équipés. Indépendant du réseau de l'école, il permet aux étudiants de la spécialité de manipuler, de s'entraîner, de simuler et monter des architectures réseaux avec un vaste panel d'équipements perfectionnés. </p>
+		</div>
+	  </div>
+	  
+	  <div class="row">
+		<div class="col-md-4 pres-block" style='background-color: rgba(5,7,7,0.5)'>
+			<h1>Espace Pro</h1> 
+			<p>Vous êtes une grande entreprise, une PME ou encore une SSII ? Vous cherchez des stagiaires avec un profil d'ingénieur spécialisé dans les télécommunications ? Nous vous invitons à remplir le formulaire d'offre de stage sur notre site. Toutes les propositions seront directement consultables par les étudiants de l'option.</p>
+		</div>
+		<div class="col-md-4 pres-block" style='background-color: rgba(224,224,224,0.5)'>
+			<h1>Etudiants TCOM</h1> 
+			<p>Ce site répertorie toutes les promotions TCOM sorties d'EPITA depuis la création du site. Email, téléphone et diverses informations sur les étudiants sont disponibles. </p>
+		</div>
+	  </div>
+ 
+    </div> <!-- /container -->
+ 
+	<!-- Static bottom navbar
+    <div class="navbar navbar-default navbar-fixed-bottom">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".bottom-collapse"> <!-- NOTE! data-target was changed to .bottom-collapse 
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Bottom Bar</a>
+        </div>
+        <div class="navbar-collapse collapse bottom-collapse"> <!-- NOTE! The extra bottom-collapse class put on here 
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">More</a></li>
+            <li><a href="#about">Bottom</a></li>
+            <li><a href="#contact">Menus</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="../navbar/">Default</a></li>
+            <li><a href="../navbar-fixed-top/">Fixed Bottom</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+ 
+   </body>
+</html>
