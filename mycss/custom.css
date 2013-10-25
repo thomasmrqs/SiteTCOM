@@ -2,7 +2,7 @@
 body{
 	width: 100%;
 	background-color:rgba(36, 69, 90, 1);
-
+	color: white;
 	background-repeat:no-repeat;
 	background-attachment:fixed;
 	background-position:center;
@@ -29,4 +29,22 @@ img .img-slide{
 
 .pres-block{
 	height: 240px;
+
+}
+
+footer{
+	height: 100%;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;  	
+	background-color:grey;
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+}
+
+footer div{
+	padding-left: 10px;
+}
+
+footer a{
+	color: black;
 }
