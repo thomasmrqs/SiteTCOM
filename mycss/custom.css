@@ -8,7 +8,39 @@ body{
 	background-position:center;
 	background-size: 1140px 800px;
 	}
+	
+p.indent     
+{     
+   text-indent: 30px;    
+}     
+	
+.fix-bug-12width{
+	width: 100%;
+}
+	
+div .height-fix-opt{
+	height: 318px;
+}
 
+div .bg-violet{
+	background-color: rgba(150,150,224,0.2)
+}
+div .bg-grey{
+	background-color: rgba(127,127,127,0.7)
+}
+div .bg-bordeaux{
+	background-color: rgba(224,24,24,0.5)
+}
+div .bg-black{
+	background-color: rgba(24,24,24,0.8)
+}
+div .bg-bleu{
+	background-color: rgba(125,125,125,0.3)
+}
+div .bg-bleuciel{
+	background-color: rgba(224,224,224,0.5)
+}
+	
 .center {
 	text-align: center;
 }
@@ -28,17 +60,19 @@ img .img-slide{
 }
 
 .pres-block{
-	height: 240px;
+	height: 250px;
 
 }
 
 footer{
+	margin: 0 auto;
+	width: 95%;
 	height: 100%;
 	border-top-left-radius: 10px;
 	border-top-right-radius: 10px;  	
-	background-color:grey;
-	background-repeat:no-repeat;
-	background-attachment:fixed;
+	background: url(../images/bg_footer_grey_bar.png);
+
+	
 }
 
 footer div{
@@ -47,4 +81,18 @@ footer div{
 
 footer a{
 	color: black;
+	font-size: 11px
+}
+
+footer ul{
+	list-style-type: none;
+}
+
+ul.nopuce{
+	list-style-type: none;
+}
+
+.separation{
+	border-right: 1px dashed grey;
+	height: auto;
 }

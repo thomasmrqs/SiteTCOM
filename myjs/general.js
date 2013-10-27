@@ -1,3 +1,11 @@
+$(function(){
+      $("#footer").load("footer.html"); 
+    });
+	
+$(function(){
+      $("#menu").load("menu.html"); 
+    });
+
 function testPlaceholderSupport() {
     var i = document.createElement('input');
     return 'placeholder' in i;
